@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="560.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator.ChessController">
+    <stylesheets>
+        <URL value="@chess.css" />
+    </stylesheets>
+   <children>
+      <StackPane layoutX="-0.5" layoutY="-0.5">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <GridPane fx:id="chessboard" alignment="CENTER" gridLinesVisible="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="560.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: orange;" />
+                        <Region prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: orange;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: orange;" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: orange;" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: orange;" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: orange;" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: orange;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: orange;" GridPane.columnIndex="7" GridPane.rowIndex="7" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: orange;" GridPane.columnIndex="2" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: orange;" GridPane.rowIndex="2" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: orange;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: orange;" GridPane.rowIndex="4" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: orange;" GridPane.rowIndex="6" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: orange;" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: orange;" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: orange;" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: orange;" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: orange;" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: orange;" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: orange;" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: orange;" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: orange;" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: orange;" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: orange;" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: orange;" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: orange;" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: orange;" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: orange;" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: orange;" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: orange;" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: orange;" GridPane.columnIndex="6" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: orange;" GridPane.columnIndex="4" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: orange;" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="1" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="5" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="3" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.rowIndex="3" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.rowIndex="1" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="7" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.rowIndex="5" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.rowIndex="7" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+                        <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+                        <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.rowIndex="1">
+                           <graphic>
+                              <ImageView fx:id="sipahia0" fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@chess/png_64/games-battle-checkmate-chess-figure-pawn-chessboard-1-3963.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <graphic>
+                              <ImageView fx:id="sipahia1" fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@chess/png_64/games-battle-checkmate-chess-figure-pawn-chessboard-1-3963.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <graphic>
+                              <ImageView fx:id="sipahia2" fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@chess/png_64/games-battle-checkmate-chess-figure-pawn-chessboard-1-3963.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="sipahia3" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <graphic>
+                              <ImageView fx:id="sipahia3" fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@chess/png_64/games-battle-checkmate-chess-figure-pawn-chessboard-1-3963.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                           <graphic>
+                              <ImageView fx:id="sipahia4" fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@chess/png_64/games-battle-checkmate-chess-figure-pawn-chessboard-1-3963.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                           <graphic>
+                              <ImageView fx:id="sipahia5" fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@chess/png_64/games-battle-checkmate-chess-figure-pawn-chessboard-1-3963.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                           <graphic>
+                              <ImageView fx:id="sipahia6" fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@chess/png_64/games-battle-checkmate-chess-figure-pawn-chessboard-1-3963.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="7" GridPane.rowIndex="1">
+                           <graphic>
+                              <ImageView fx:id="sipahia7" fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@chess/png_64/games-battle-checkmate-chess-figure-pawn-chessboard-1-3963.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;">
+                           <graphic>
+                              <ImageView fx:id="haathiaa" fitHeight="56.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@chess/png_64/games-battle-checkmate-chess-figure-move-rook-2-3973.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="7">
+                           <graphic>
+                              <ImageView fx:id="haathiab" fitHeight="56.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@chess/png_64/games-battle-checkmate-chess-figure-move-rook-2-3973.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="1">
+                           <graphic>
+                              <ImageView fx:id="horeseaa" fitHeight="56.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@chess/png_64/games-battle-checkmate-chess-knight-horse-figure-1-3966.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="6">
+                           <graphic>
+                              <ImageView fx:id="horseab" fitHeight="56.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@chess/png_64/games-battle-checkmate-chess-knight-horse-figure-1-3966.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="2">
+                           <graphic>
+                              <ImageView fx:id="ootaa" fitHeight="56.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@chess/png_64/games-battle-checkmate-chess-camel-bishop-figure-1-3956.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="5">
+                           <graphic>
+                              <ImageView fx:id="ootab" fitHeight="56.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@chess/png_64/games-battle-checkmate-chess-camel-bishop-figure-1-3956.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="3">
+                           <graphic>
+                              <ImageView fx:id="wajira" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@chess/png_64/games-battle-checkmate-chess-figure-queen-wazir-3968.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="4">
+                           <graphic>
+                              <ImageView fx:id="queena" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@chess/png_64/games-battle-chess-checkmate-figure-king-gambit-2-3965.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="4" GridPane.rowIndex="7">
+                           <graphic>
+                              <ImageView fx:id="queenb" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@chess/png_64/games-battle-chess-checkmate-figure-king-gambit-3-3970.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="3" GridPane.rowIndex="7">
+                           <graphic>
+                              <ImageView fx:id="wajirb" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@chess/png_64/games-battle-wazir-chess-figure-queen-piece-3954.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="sipahib0" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.rowIndex="6">
+                           <graphic>
+                              <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@chess/png_64/games-battle-checkmate-chess-figure-pawn-chessboard-2-3969.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="sipahib7" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="7" GridPane.rowIndex="6">
+                           <graphic>
+                              <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@chess/png_64/games-battle-checkmate-chess-figure-pawn-chessboard-2-3969.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="sipahib6" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="6" GridPane.rowIndex="6">
+                           <graphic>
+                              <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@chess/png_64/games-battle-checkmate-chess-figure-pawn-chessboard-2-3969.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="sipahib5" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="5" GridPane.rowIndex="6">
+                           <graphic>
+                              <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@chess/png_64/games-battle-checkmate-chess-figure-pawn-chessboard-2-3969.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="sipahib4" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="4" GridPane.rowIndex="6">
+                           <graphic>
+                              <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@chess/png_64/games-battle-checkmate-chess-figure-pawn-chessboard-2-3969.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="sipahib3" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="3" GridPane.rowIndex="6">
+                           <graphic>
+                              <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@chess/png_64/games-battle-checkmate-chess-figure-pawn-chessboard-2-3969.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="sipahib2" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                           <graphic>
+                              <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@chess/png_64/games-battle-checkmate-chess-figure-pawn-chessboard-2-3969.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="sipahib1" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                           <graphic>
+                              <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@chess/png_64/games-battle-checkmate-chess-figure-pawn-chessboard-2-3969.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="haathiba" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.rowIndex="7">
+                           <graphic>
+                              <ImageView fitHeight="56.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@chess/png_64/games-battle-checkmate-chess-figure-move-rook-1-3971.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="haathibb" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="7" GridPane.rowIndex="7">
+                           <graphic>
+                              <ImageView fitHeight="56.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@chess/png_64/games-battle-checkmate-chess-figure-move-rook-1-3971.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="horseba" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                           <graphic>
+                              <ImageView fitHeight="56.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@chess/png_64/games-battle-checkmate-chess-knight-horse-figure-3959.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="horsebb" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="6" GridPane.rowIndex="7">
+                           <graphic>
+                              <ImageView fitHeight="56.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@chess/png_64/games-battle-checkmate-chess-knight-horse-figure-3959.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="ootba" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                           <graphic>
+                              <ImageView fitHeight="56.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@chess/png_64/games-battle-checkmate-chess-camel-bishop-figure-3952.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="ootbb" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="5" GridPane.rowIndex="7">
+                           <graphic>
+                              <ImageView fitHeight="56.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@chess/png_64/games-battle-checkmate-chess-camel-bishop-figure-3952.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="ootbb1" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.rowIndex="2" />
+                        <Button fx:id="ootbb11" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.rowIndex="4" />
+                        <Button fx:id="ootbb12" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.rowIndex="3" />
+                        <Button fx:id="ootbb13" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+                        <Button fx:id="ootbb14" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+                        <Button fx:id="ootbb15" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                        <Button fx:id="ootbb16" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                        <Button fx:id="ootbb17" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                        <Button fx:id="ootbb18" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <Button fx:id="ootbb19" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Button fx:id="ootbb110" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                        <Button fx:id="ootbb111" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <Button fx:id="ootbb112" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Button fx:id="ootbb113" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Button fx:id="ootbb114" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Button fx:id="ootbb115" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Button fx:id="ootbb116" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.rowIndex="5" />
+                        <Button fx:id="ootbb118" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                        <Button fx:id="ootbb119" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                        <Button fx:id="ootbb120" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                        <Button fx:id="ootbb121" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                        <Button fx:id="ootbb122" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                        <Button fx:id="ootbb123" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                        <Button fx:id="ootbb124" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                        <Button fx:id="ootbb125" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+                        <Button fx:id="ootbb126" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+                        <Button fx:id="ootbb127" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+                        <Button fx:id="ootbb128" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+                        <Button fx:id="ootbb130" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+                        <Button fx:id="ootbb131" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+                        <Button fx:id="ootbb132" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+                        <Button fx:id="ootbb1181" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                        <Button fx:id="ootbb1182" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </GridPane>
+               </children>
+            </HBox>
+            <StackPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="100.0" prefWidth="200.0" style="visibility: false;">
+               <children>
+                  <Pane opacity="0.61" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: gray;" />
+                  <Label fx:id="CHECK" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="200.0" text="CHECK" textAlignment="CENTER">
+                     <font>
+                        <Font size="64.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

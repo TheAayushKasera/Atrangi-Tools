@@ -1,0 +1,17 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.AnchorPane{
+    -fx-border-color:orange;
+    -fx-border-width:5px;
+}
+.button{
+    -fx-text-fill:white;
+}
+.prev{
+    -fx-background-color:white;
+}
